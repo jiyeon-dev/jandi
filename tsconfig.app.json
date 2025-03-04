@@ -25,6 +25,12 @@
     // JSX 코드를 React 코드로 변환하도록 설정
     "jsx": "react-jsx",
 
+    /* Path Aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
     /* Linting */
     // 엄격한 타입 검사를 사용하도록 설정
     "strict": true,

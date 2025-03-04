@@ -16,4 +16,8 @@
   - 다른 TypeScript 프로젝트와의 참조 관계가 없음
   - 따라서 incremental만으로 충분함
 - 메모리를 조금 더 사용하지만, 변경되지 않은 파일들은 빌드 결과를 재사용하기 때문에 빌드 속도가 빠르다.
+
   - 가끔 캐시가 잘못된 경우 `tsc --build --clean` 으로 초기화 필요할 수 있음.
+
+- 참고
+  - https://typescript-kr.github.io/pages/compiler-options.html
