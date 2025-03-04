@@ -5,6 +5,19 @@
     {"path": "./tsconfig.node.json"}
   ],
   "compilerOptions": {
-    "incremental": true
+    // 타입스크립트 라이브러리 체크 비활성화
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    // 타입스크립트 파일 확장자를 허용하도록 설정
+    "allowImportingTsExtensions": true,
+    // 독립적인 모듈 모드를 사용하도록 설정
+    "isolatedModules": true,
+    // 모듈 검색 방법을 강제로 설정
+    "moduleDetection": "force",
+    // typescript 컴파일 결과를 출력하지 않도록 설정 (대신 vite가 최적화해서 출력)
+    "noEmit": true
+
+    /* Linting */
   }
 }

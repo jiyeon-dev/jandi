@@ -6,21 +6,10 @@
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
     // typescript 코드가 ES2022 버전의 자바스크립트 코드로 변환되도록 설정
     "target": "ES2022",
-    // 타입스크립트 라이브러리 체크 비활성화
-    "skipLibCheck": true,
 
     /* Bundler mode */
-    // 모듈 해석 방법을 설정: vite, webpack 등의 번들러 모드
-    // (node_modules 해석은 node와 비슷하지만, 타입스크립트의 특정 기능들(allowImportingTsExtensions 등)을 더 잘 지원)
-    "moduleResolution": "bundler",
-    // 타입스크립트 파일 확장자를 허용하도록 설정
-    "allowImportingTsExtensions": true,
-    // 독립적인 모듈 모드를 사용하도록 설정
-    "isolatedModules": true,
-    // 모듈 검색 방법을 강제로 설정
-    "moduleDetection": "force",
-    // typescript 컴파일 결과를 출력하지 않도록 설정 (대신 vite가 최적화해서 출력)
-    "noEmit": true
+    // 모듈 해석 방법을 설정
+    "moduleResolution": "bundler"
   },
   "include": ["vite.config.ts"]
 }
