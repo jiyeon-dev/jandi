@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    // 증분 컴파일을 위한 필드 정보를 저장하는 파일
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    // typescript 코드가 ES2020 버전의 자바스크립트 코드로 변환되도록 설정
+    "target": "ES2020",
+    // 클래스 필드에 대한 정의를 사용하도록 설정
+    "useDefineForClassFields": true,
+    // 타입스크립트 라이브러리 체크 비활성화
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    // 모듈 해석 방법을 설정
+    "moduleResolution": "bundler",
+    // 타입스크립트 파일 확장자를 허용하도록 설정
+    "allowImportingTsExtensions": true,
+    // 독립적인 모듈 모드를 사용하도록 설정
+    "isolatedModules": true,
+    // 모듈 검색 방법을 강제로 설정
+    "moduleDetection": "force",
+    // typescript 컴파일 결과를 출력하지 않도록 설정 (대신 vite가 최적화해서 출력)
+    "noEmit": true,
+    // JSX 코드를 React 코드로 변환하도록 설정
+    "jsx": "react-jsx",
+
+    /* Linting */
+    // 엄격한 타입 검사를 사용하도록 설정
+    "strict": true,
+    // 사용되지 않는 로컬 변수를 경고하도록 설정
+    "noUnusedLocals": true,
+    // 사용되지 않는 매개변수를 경고하도록 설정
+    "noUnusedParameters": true,
+    // 타입 검사를 위한 추가 검사를 사용하도록 설정
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["src"]
+}
