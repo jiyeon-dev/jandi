@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    // 증분 기능 활성화 (tsBuildInfoFile옵션 필요)
+    "incremental": true,
     // 증분 컴파일을 위한 필드 정보를 저장하는 파일
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
     // typescript 코드가 ES2022 버전의 자바스크립트 코드로 변환되도록 설정
